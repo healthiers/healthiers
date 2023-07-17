@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../../utils/device";
 
 export const SigninParent = styled.div`
     width: 110vw;
@@ -17,6 +18,10 @@ flex-direction:column;
 background:#102428;
 
 
+@media ${device.mobileS} {
+    max-width: 300px;
+  }
+
     `;
 
 
@@ -24,7 +29,7 @@ export const Wrapper = styled.div`
 width: 85vw;
 height: 80vh;
 background:#102428;
-margin-left: 20rem;
+margin-left: 17rem;
    
     & h3 {
         margin-top:2rem;
@@ -40,7 +45,7 @@ margin-left: 20rem;
     & form {
         width: 60%;
         height: 80%;
-        margin-left: 8rem;
+        margin-left:7rem;
         margin-top:3rem;
         color:#fff;
         
