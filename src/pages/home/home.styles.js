@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../../utils/device";
 
 
 export const HomeParent = styled.div`
@@ -17,7 +18,21 @@ export const HomeWrapper = styled.div`
      display: flex;
      flex-direction: column;
      background:#102428;
-    
+
+     @media ${device.laptop} {
+          display: flex;
+          flex-direction: row;
+      }
+
+      @media ${device.tablet} {
+          display: flex;
+          flex-direction: row;
+      }
+
+      @media ${device.mobileS} {
+          display: flex;
+          flex-direction: row;
+      }
       `;
 
 
