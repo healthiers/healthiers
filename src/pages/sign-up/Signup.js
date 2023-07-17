@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
     SignupParent,
     SignupWrapper,
@@ -11,9 +11,10 @@ import { Link } from "react-router-dom";
 import FormTextInput from "../../components/custom-input/FormTextInput";
 import FormButton from "../../components/custom-button/FormButton";
 import arrow from "../../assets/arrow.png";
-import { Checkbox, Box } from '@chakra-ui/react';
+
 import logo from "../../assets/logo.png";
 import Footer from "../../components/footer/Footer";
+import Checkbox from "../../components/checkbox/Checkbox";
 
 
 
@@ -22,16 +23,19 @@ import Footer from "../../components/footer/Footer";
 
 
 const Signup = () => {
-
+    const [checked, setChecked] = useState(false);
+    const onChange = () => {
+        setChecked(!checked);
+    };
 
     return (
         <SignupParent>
             <SignupWrapper>
-            <LogoContainer>
+                <LogoContainer>
                     <img src={logo} alt="logo" />
-                    </LogoContainer>
+                </LogoContainer>
                 <Wrapper>
-                   
+
                     <form>
                         <FormHeader>
                             <h3>SIGN UP</h3>
@@ -87,14 +91,14 @@ const Signup = () => {
                             name="walletAddress"
 
                         />
-                        <Box>
-                            <Checkbox size="xl" colorScheme='red'>
+                        <Checkbox
+                            id="checkbox"
+                            label="By signing up you accept our Terms of Service and Privacy Policy."
+                            value={checked}
+                            onChange={onChange}
+                        />
 
-                                By signing up you accept our <Link style={{ textDecoration: 'none', color: '#CCF1FA' }}>Terms of Service</Link> and
-                                <Link style={{ textDecoration: 'none', color: '#CCF1FA' }}> Privacy Policy</Link>
-                            </Checkbox>
-                        </Box>
-
+                        
                         <FormButton
                             text="Sign up"
                             color="#fff"
