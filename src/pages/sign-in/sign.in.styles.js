@@ -45,7 +45,7 @@ margin-left: 17rem;
     & form {
         width: 60%;
         height: 80%;
-        margin-left:7rem;
+        margin-left:8rem;
         margin-top:3rem;
         color:#fff;
         

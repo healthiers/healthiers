@@ -36,7 +36,7 @@ export const Wrapper = styled.div`
     & form {
         width: 60%;
         height: 80%;
-        margin-left: 7rem;
+        margin-left: 8rem;
         color:#fff;
         
     }
