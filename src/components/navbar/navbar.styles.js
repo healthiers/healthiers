@@ -46,7 +46,7 @@ export const LogoContainer = styled.div`
  
 export const BigLinkContainer = styled.div`
     display: flex;
-    margin-left: 4rem;
+    margin-left: 2rem;
     
 
    
@@ -60,7 +60,7 @@ export const NavbarLink = styled(Link)`
  font-family: sans-serif;
  text-decoration: none;
  color: #fff;
- margin-left:3rem;
+ margin-left:2rem;
  margin-top:5rem;
  
 

@@ -2,7 +2,9 @@ import React from "react";
 import { RecommendationParent,
     RecommendationWrapper, 
     RecommendationNavcover,
-    SubNavbarLink, SubNavbarParent, RecommendFooterContainer
+    SubNavbarLink, 
+    SubNavbarParent, 
+    RecommendFooterContainer
 } from "./recommendation.styles";
 import Navbar from  "../../components/navbar/Navbar";
 import { Link } from "react-router-dom";
