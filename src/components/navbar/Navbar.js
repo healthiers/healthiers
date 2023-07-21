@@ -28,6 +28,7 @@ const Navbar = () => {
                     <NavbarLink><Link to='/sign-up' style={{ textDecoration: 'none', color: 'white' }}>Sign up </Link></NavbarLink>
                     <NavbarLink><Link to='/sign-in' style={{ textDecoration: 'none', color: 'white' }}>Sign in</Link></NavbarLink>
                     <NavbarLink><Link to='/my-nfts' style={{ textDecoration: 'none', color: 'white' }}>My NFTs</Link></NavbarLink>
+                    <NavbarLink><Link to='/market-place' style={{ textDecoration: 'none', color: 'white' }}>Marketplace</Link></NavbarLink>
                 </BigLinkContainer>
                 <ButtonWrapper><img src={user} alt="user" width={18} height={18} />
                     <Button>Connect Wallet</Button></ButtonWrapper>

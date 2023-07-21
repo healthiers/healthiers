@@ -11,7 +11,6 @@ import { Link } from "react-router-dom";
 import FormTextInput from "../../components/custom-input/FormTextInput";
 import FormButton from "../../components/custom-button/FormButton";
 import arrow from "../../assets/arrow.png";
-
 import logo from "../../assets/logo.png";
 import Footer from "../../components/footer/Footer";
 import Checkbox from "../../components/checkbox/Checkbox";

@@ -45,6 +45,7 @@ export const Header = styled.div`
     & h2 {
         color: #fff;
         font-size:2.5rem;
+        line-height:0.1rem;
         
      }
 
