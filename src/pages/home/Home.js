@@ -52,7 +52,7 @@ const Home = () => {
                                                         <br></br>AI-generated product</h1>
                                                 <p>Introducing NFT-powered personalized healthcare plans,
                                                         <br></br>tailored exclusively to your unique health profile.</p>
-                                                <ButtonWrapper><Button>Mint NFTs</Button>
+                                                <ButtonWrapper><Button><Link  to='/mint' style={{ textDecoration: 'none', color: 'white' }}>Mint NFTs</Link></Button>
                                                         <Link style={{ textDecoration: 'none', color: '#00B9E5', marginLeft: "3rem", marginTop: '0.5rem', fontSize: '1rem' }}>Learn More</Link></ButtonWrapper>
                                                 <h2>Minted NFTS</h2>
                                                 <img src={nft1} alt='nft1' />
