@@ -1,4 +1,5 @@
-Healthiers
+Product Name: Healthiers
+
 
 Healthiers, an AI-generated product, provides individuals with personalized healthcare plans based on their health data and AI algorithms. 
 
@@ -15,5 +16,15 @@ Solution:
 Healthiers provides a solution to these problems by providing individuals with personalized healthcare plans based on their needs and goals. The product uses AI algorithms to analyze health data and generate personalized recommendations for diet, exercise, medication, lifestyle changes etc.  These recommendations go beyond generic advice and are designed to meet individual health goals.
 Additionally, Healthiers allows users to track their progress towards their health goals and share their information with their healthcare providers.
 
+
+Future plans for the project
+
+1.	Introduction of medical service providers; Users get to connect with medical service providers, addressing their medical situation through Healthiers.
+2.	Minted NFTs generate funds from people through trading or donors assisting in financing the health condition of the user.
+
+
+
+A list of tech stack (solutions, technology infrastructure, technology services, etc.) used for this Project are
+React js, Chakra UI, Styled components, React Router dom, Node-js, Figma
 
 
