@@ -29,7 +29,7 @@ const Signin = () => {
         <SigninParent>
             <SigninWrapper>
             <LogoContainer>
-                    <img src={logo} alt="logo" />
+                    <Link to='/'><img src={logo} alt="logo" /></Link>
                     </LogoContainer>
                 <Wrapper>
 

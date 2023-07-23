@@ -20,7 +20,7 @@ const Navbar = () => {
     return (
         <NavbarParent>
             <NavbarWrapper>
-                <LogoContainer><img src={logo} alt="logo" />
+                <LogoContainer><Link to='/'><img src={logo} alt="logo" /></Link>
                 </LogoContainer>
                 <BigLinkContainer>
                     <NavbarLink><Link to='/' style={{ textDecoration: 'none', color: 'white' }} >Home</Link></NavbarLink>

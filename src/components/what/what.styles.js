@@ -45,7 +45,7 @@ export const WhatWrapper = styled.div`
       gap: 0.5rem;
       justify-content: space-around;
       align-items: center;
-      margin-top:7rem;
+      margin-top:7.5rem;
       margin-left:5rem;
 
       & img{
@@ -61,7 +61,7 @@ export const WhatWrapper = styled.div`
       gap: 0.5rem;
       justify-content: space-around;
       align-items: center;
-      margin-top:7rem;
+      margin-top:7.5rem;
       margin-left:5rem;
       
       & img{

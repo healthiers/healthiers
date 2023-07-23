@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState}  from "react";
 import {
     MintParent,
     MintWrapper,
@@ -15,6 +15,8 @@ import Footer from "../../components/footer/Footer";
 import Navbar from "../../components/navbar/Navbar";
 import { NavCover } from "../home/home.styles";
 import { Button, Select } from "@chakra-ui/react";
+import 'sweetalert2/dist/sweetalert2.css';
+import Swal from 'sweetalert2';
 
 
 
@@ -25,6 +27,38 @@ import { Button, Select } from "@chakra-ui/react";
 
 const MintGenerate = () => {
 
+    const [mintedNft, setMintedNft] = useState('');
+
+  const MintedNft = (nft) => {
+    if (!mintedNft) {
+      Swal.fire({
+        position: 'center',
+        icon: 'success',
+        fontWeight: 'bold',
+        title: 'Minted successful',
+        text: 'Check your AI-generated recommendations',
+        backGround:"#102428",
+        confirmButtonColor: '#00B9E5',
+        confirmButtonText: 'View Recommendation',
+        // showConfirmButton: false,
+        timer: 2500
+      });
+
+      setMintedNft(nft);
+    } else {
+      Swal.fire({
+        position: 'center',
+        icon: 'danger',
+        title: 'You have already Minted!',
+        text: 'You can only mint this Nft once.',
+        confirmButtonColor: 'red',
+        confirmButtonText: 'OK',
+        timer: 2000
+      });
+    }
+  };
+  
+  
 
     return (
         <MintParent>
@@ -117,6 +151,8 @@ const MintGenerate = () => {
                                 background='#00B9E5'
                                 fontWeight='500'
                                 marginTop='20px'
+                                onClick={() => MintedNft('generateNFt')}
+                                className={mintedNft === 'generate Nft' ? 'bg-gray-300 cursor-not-allowed' : 'bg-green-500'}
 
                             >
                                 Mint
