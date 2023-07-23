@@ -37,7 +37,7 @@ const MintGenerate = () => {
         fontWeight: 'bold',
         title: 'Minted successful',
         text: 'Check your AI-generated recommendations',
-        backGround:"#102428",
+        background:"#102428",
         confirmButtonColor: '#00B9E5',
         confirmButtonText: 'View Recommendation',
         // showConfirmButton: false,
@@ -51,6 +51,7 @@ const MintGenerate = () => {
         icon: 'danger',
         title: 'You have already Minted!',
         text: 'You can only mint this Nft once.',
+        background:"#102428",
         confirmButtonColor: 'red',
         confirmButtonText: 'OK',
         timer: 2000
