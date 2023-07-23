@@ -39,7 +39,7 @@ export const SummaryContainer2 = styled.section`
       gap: 0.5rem;
       justify-content: space-around;
       align-items: center;
-      margin-top:3rem;
+      margin-top:4rem;
       margin-left:5rem;
     `;
     

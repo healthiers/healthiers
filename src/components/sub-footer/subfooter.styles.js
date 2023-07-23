@@ -115,9 +115,9 @@ border-radius:5px;
 color:#ffffff;
 height: 1.8rem;
 align-items: center;
-margin-top:0.5rem;
-margin-bottom:0.25rem;
-margin-right:1rem;
+margin-top:0.28rem;
+margin-bottom:0.275rem;
+margin-right:3rem;
 font-size: 1rem;
 display:flex;
 
