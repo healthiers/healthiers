@@ -1,18 +1,7 @@
 
 import React from "react";
-import {
-    SigninParent,
-    SigninWrapper,
-    Wrapper,
-    FormHeader,
-    FooterWrapper,
-    LogoContainer
-} from "./sign.in.styles";
 import { Link } from "react-router-dom";
-import FormTextInput from "../../components/custom-input/FormTextInput";
 import arrow from "../../assets/arrow.png";
-import FormButton from "../../components/custom-button/FormButton";
-import Footer from "../../components/footer/Footer";
 import logo from "../../assets/logo.png";
 
 
@@ -26,53 +15,43 @@ const Signin = () => {
 
 
     return (
-        <SigninParent>
-            <SigninWrapper>
-            <LogoContainer>
-                    <Link to='/'><img src={logo} alt="logo" /></Link>
-                    </LogoContainer>
-                <Wrapper>
+        <main className="bg-[#102428] w-screen">
 
-                    <form>
-                        <FormHeader>
-                            <h3>SIGN IN</h3>
+            <Link to='/'><img src={logo} alt="logo" /></Link>
 
-                            <img src={arrow} alt="arrow" />
-                            <h5>Welcome back!</h5>
-                        </FormHeader>
+            <section class='w-[90%] md:w-[80%] mx-auto py-10'>
+                <form class='mt-40 w-3/4 mx-28'>
 
-                        <FormTextInput
-                            labelName="Email address"
-                            placeholder="E.g naomiroberts@gmail.com"
-                            name="emailAddress"
+                    <h3 class='text-white text-4xl mx-80 font-bold'>SIGN IN</h3>
 
-                        />
-
-                        <FormTextInput
-                            labelName="Password"
-                            placeholder="********"
-                            name="password"
-
-                        />
-
-                        <FormButton
-                            text="Sign in"
-                            color="#fff"
-                            borderColor="#00B9E5"
-                        />
-
-                        <p>Don't have an account?<Link to="/sign-up" style={{ textDecoration: 'none', color: '#CCF1FA' }}>Sign up</Link></p>
+                    <img src={arrow} alt="arrow" className="mx-80" />
+                    <h5 class='text-white text-xl mx-80 font-bold'>Welcome back!</h5>
 
 
-                    </form>
-                    
-                </Wrapper>
-                <FooterWrapper>
-                        <Footer />
-                    </FooterWrapper>
-            </SigninWrapper>
-        </SigninParent>
+                    <div class="mb-1">
+                        <label class="block text-white text-sm font-bold mb-2" for="fullName">
+                            Email address
+                        </label>
+                        <input class="bg-[#E0EDF0] border-[#CCF1FA] border-2 rounded w-full py-2 px-3 text-[#08191B] leading-tight focus:outline-none focus:shadow-outline" id="emailAddress" type="email" placeholder="E.g naomiroberts@gmail.com" required></input>
+                    </div>
+                    <div class="mb-1">
+                        <label class="block text-white text-sm font-bold mb-2" for="password">
+                            Password
+                        </label>
+                        <input class="bg-[#E0EDF0] border-[#CCF1FA] border-2 rounded w-full py-2 px-3 text-[#08191B] leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="********" required></input>
+                    </div>
+                    <button class="bg-[#00B9E5] hover:bg-[#00B9E5] text-[#fff] font-semibold py-2  border-[#00B9E5] w-full h-10 rounded">Sign in </button>
 
+                    <p class='text-white mx-64 mt-8'>Already have an account? <Link to="/sign-up" style={{ textDecoration: 'none', color: '#CCF1FA' }}>Sign up</Link></p>
+
+
+
+                </form>
+
+
+            </section>
+
+        </main>
     );
 };
 

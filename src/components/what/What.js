@@ -1,12 +1,4 @@
 import React from "react";
-import {
-    WhatParent,
-    WhatWrapper,
-    Header,
-    SummaryContainer1,
-    SummaryContainer2,
-   SummaryContainer3
-} from "./what.styles";
 import arrow from "../../assets/arrow.png";
 import diabetes from "../../assets/diabetes.png";
 import hypertension from "../../assets/hypertension.png";
@@ -28,35 +20,31 @@ const What = () => {
 
 
     return (
-        <WhatParent>
-            <WhatWrapper>
-                <Header><h2>What can we help you with today?</h2>
-                    <img src={arrow} alt="arrow" />
-                    <h6>Let’s help you optimize your well-being</h6>
-                </Header>
+        <section className='bg-[#102428]'>
 
-                <SummaryContainer1><img src={diabetes} alt="diabetes" />
-                    <img src={hypertension} alt="hypertension" />
-                    <img src={cardiovascular} alt="cardiovascular" />
-                </SummaryContainer1>
-                <SummaryContainer2>
-                    <img src={mental} alt="mental" />
-                    <img src={obesity} alt="obesity" />
-                    <img src={chronic} alt="chronic" />
-                </SummaryContainer2>
-                <SummaryContainer3>
+            <h2 class='text-white text-3xl mx-96 font-bold px-8 mt-4'>What can we help you with today?</h2>
+            <img src={arrow} alt="arrow" class='mx-96 px-36'/>
+            <h6 class='text-white text-xl mx-96 font-bold px-8'>Let’s help you optimize your well-being</h6>
+
+            <div className="grid-cols-4 gap-4 md:flex md:flex-row mx-8 mt-2">
+                <img src={diabetes} alt="diabetes" />
+                <img src={hypertension} alt="hypertension" />
+                <img src={cardiovascular} alt="cardiovascular" />
+            </div>
+            <div className="grid-cols-4 gap-4 md:flex md:flex-row mx-8 mt-2">
+                <img src={mental} alt="mental" />
+                <img src={obesity} alt="obesity" />
+                <img src={chronic} alt="chronic" />
+            </div>
+            <div className="grid-cols-4 gap-4 md:flex md:flex-row mx-8 mt-2">
                 <img src={allergies} alt="allergies" />
                 <img src={sleep} alt="sleep" />
                 <img src={chronicpain} alt="chronicpain" />
 
-                </SummaryContainer3>
-                            </WhatWrapper>
+            </div>
 
 
-
-        </WhatParent>
-
-
+        </section>
 
 
     )

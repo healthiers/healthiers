@@ -1,52 +1,69 @@
 import React from "react";
 import recommend from "../../assets/recommendation-img.png";
-import { RecommendationContent, RecommendationNFT, RecommendationText } from "./recommendationbody.styles";
+import { Link } from "react-router-dom";
+
 
 
 
 const RecommendationBody = () => {
 
     return (
+        <section className='mt-20'>
+            <div class="grid grid-cols-2 gap-7 mt-8">
+                <div class='mt-16'>
+                    <ul className='flex mx-4 gap-20 mt-4' >
+                        <li className='hidden md:inline-block text-white font-semibold text-sm'><Link to='/'>Recommendation</Link></li>
+                        <li className='hidden md:inline-block text-white font-semibold text-sm'><Link to='/about'>Monitor your health</Link></li>
+                        <li className='hidden md:inline-block text-white font-semibold text-sm'><Link to='/sign-up'>My NFTs</Link></li>
+                        <li className='hidden md:inline-block text-white font-semibold text-sm'><Link to='/sign-in'>Settings</Link></li>
 
-        <RecommendationContent>
-            <RecommendationNFT>
-                <img src={recommend} alt="recommend" />
-                <h3>Diagonis: <span>Diabetics</span></h3>
-                <h3>Patients Name: Edward Parker</h3>
-                <h3>Age: 89</h3>
-                <h3>Gender: Male</h3>
-            </RecommendationNFT>
-            <RecommendationText>
-                <ul>
-                    <li>Nutrition: Adopt a balanced and individual meal plan that alligns with your<br></br> 
-                    lifestyle. Focus on whole, nutrient-dense foods,and monitor carbonhydrate <br></br> 
-                    intake to manage blood sugar levels effectively</li>
-                    <li>Exercise: Engage in regular physical activity to imptove insulin sensitivity <br></br>
-                    and overall cardiovascular health. Incorporate a mix of aerobic exercises,<br></br> 
-                    strength training, and flexibility exercises into his routine.</li>
-                    <li>Medication Management: Stay delight in taking insulin and Levethyroxine as prescribed<br></br>
-                     by a healthcare provider. Regularly monitor blood sugar levels and thyroid function to ensure proper<br></br>
-                     dosage Adjustments if necessary</li>
-                    <li>Sleep Hygeine: Priotize quality sleep by establishing a consistent sleep schedule and <br></br>
-                    creating a relaxing bedtime routine. Aim for 7-9 hours of sleep each night to support<br></br>
-                    overall health and diabeties management</li>
-                    <li>Stress Mangement: Practice stress reduction techniques, such as mindfulness, deep breathing exercise,<br></br> 
-                    or yoga to better manage stress levels and its impact on bood sugar fluctuations.</li>
-                    <li>Regular Checkups: Schedule regular checkups with a healthcare team to monitor diabetes control,<br>
-                    </br> thyroid function and overall health.</li>
-                    <li>Support Network: Seek support from family, friends or diabetes support groups to share <br></br> 
-                    experiences, knowlegde and encouragement through out your journey</li>
-                    <li>Continues Learning: Stay informed about the latest diabetes management strategies,<br>
-                    </br> Advancement and research to make well informed decisions about his health</li>
-                    <li>Celebrate Progress: Acknowledge and celebrate small victories in diabetes management which <br>
-                    </br> acn serve as poerful motivators in maintaining a positive outlook on his health journey</li>
-                    <p>Its is however important to anyone with diabetes, to work closely with qualified healthcare <br></br>
-                    professionals to receive personalized medical advice and create a comprehensive diabetes <br></br> 
-                    management plan that best suits his specific needs and health status</p>
-                </ul>
-            </RecommendationText>
-        </RecommendationContent>
 
+                    </ul>
+                    <img src={recommend} alt="recommend" class='mx-4 mt-4' />
+                    <h3 class='text-white text-xl mx-4 font-bold'>Diagonsis: <span>Diabetics</span>
+                        <br />Patients Name: Edward Parker
+                        <br />Age: 89
+                        <br />Gender: Male</h3>
+                </div>
+                <div class='w-3/4 mt-16'>
+                    <ul className='text-white mt-4'>
+                        <li><span class='font-bold'>Nutrition:</span> Adopt a balanced and individual meal plan that alligns with <br></br>
+                            your lifestyle. Focus on whole, nutrient-dense foods,and  <br></br>
+                            monitor carbonhydrate intake to manage blood sugar levels
+                            <br />effectively to improve insulin sensitivity</li>
+                        <li><span class='font-bold'>Exercise:</span> Engage in regular physical activity and overall <br />
+                            cardiovascular health. Incorporate a mix of aerobic exercises,<br />
+                            strength training, and flexibility exercises into his routine.</li>
+                        <li><span class='font-bold'>Medication Management:</span> Stay delight in taking insulin and <br />
+                            Levethyroxine as prescribed by a healthcare provider. Regularly <br />
+                            monitor blood sugar levels and thyroid function to ensure proper
+                            <br /> dosage Adjustments if necessary</li>
+                        <li><span class='font-bold'>Sleep Hygiene:</span> Priotize quality sleep by establishing a consistent <br />
+                            sleep schedule and creating a relaxing bedtime routine. Aim   <br />
+                            for 7-9 hours of sleep each night to support overall health <br />
+                            and diabetes management</li>
+                        <li><span class='font-bold'>Stress Mangement:</span> Practice stress reduction techniques, such as <br></br>
+                            mindfulness, deep breathing exercise, or yoga to better <br />
+                            manage stress levels and its impact on bood sugar fluctuations.</li>
+                        <li><span class='font-bold'>Regular Checkups:</span> Schedule regular checkups with a healthcare team <br />
+                            to monitor diabetes control,thyroid function and overall health.</li>
+                        <li><span class='font-bold'>Support Network:</span> Seek support from family, friends or diabetes <br></br>
+                            support groups to share experiences, knowledge and <br />
+                            encouragement through out your journey</li>
+                        <li><span class='font-bold'>Continues Learning:</span> Stay informed about the latest diabetes <br>
+                        </br>management strategies, Advancement and research to make <br />
+                            well informed decisions about his health</li>
+                        <li><span class='font-bold'>Celebrate Progress:</span> Acknowledge and celebrate small victories in <br>
+                        </br>diabetes management which can serve as poerful motivators
+                            <br /> in maintaining a positive outlook on his health journey</li>
+                        <p>Its is however important to anyone with diabetes, to work closely with  <br></br>
+                            qualified healthcare professionals to receive personalized medical <br></br>
+                            advice and create a comprehensive diabetes management plan <br />
+                            that best suits his specific needs and health status.</p>
+                    </ul>
+                </div>
+            </div>
+        </section>
     );
 };
 
